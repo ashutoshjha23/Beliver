@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beliver</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <img src="" class="logo">
+            <div class="popup" id="popup">
+                <h2>YOU BETTER!</h2>
+                <h2>Because you are the best.
+                </h2>
+                <button type="button" onclick="closePopup()">Close</button>
+            </div>
+        <button id="button1" onclick="openPopup()"></button>
+        <button id="button"></button>
+        </div> 
+
+
+<script>
+    let popup = document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+</script>
+    </body>
+</html>
